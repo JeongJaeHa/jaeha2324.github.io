@@ -1,0 +1,143 @@
+html, body {
+    margin: 0px;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    padding-left: 12px;
+}
+
+/* 상단 부분 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#374f66;
+    padding: 8px 12px;
+    height: 125px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;;
+} 
+
+.navbar a {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 12px;
+
+}
+
+.navbar_menu li {
+    padding: 16px 24px;
+}
+
+/* menu에 마우스 올리면 나타나는 효과 */
+
+.navbar_menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 4px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* 상단부분 메뉴 스타일 */
+.navbar_link {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+.navbar_link li {
+    padding: 8px 12px;
+}
+
+/* 메인 내용  */
+.Question {
+    background-color: slategrey;
+    list-style: none;
+    color: white;
+    height: auto;
+    min-height: calc(100vh - 141px);
+    padding-bottom: 0;
+}
+
+.Question ul {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Question li {
+    font-size: 22px;
+}
+
+
+.Question_career {
+    padding-bottom: 50px;
+    padding-top: 75px;
+}
+
+.Question_now {
+    padding-bottom: 50px;
+
+}
+
+/* 하단 부분 */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: slategray;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: translateY(-100%);
+
+}
+
+/* 링크에 마우스 올리면 색상 변화 */
+
+.footer a:hover {
+    color: #BCAC77;
+}
+
+.footer ul {
+    padding-left: 0;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer li {
+    list-style: none;
+    float: left;
+}

@@ -1,0 +1,127 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    padding-left: 12px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#374f66;
+    padding: 8px 12px;
+    height: 125px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.navbar a {
+    display: flex;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 12px;
+
+}
+
+.navbar_menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 4px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar_menu li {
+    padding: 16px 24px;
+}
+
+.navbar_link {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+.navbar_link li {
+    padding: 8px 12px;
+}
+
+.content {
+    background-color: slategrey;
+    height: auto;
+    min-height: calc(100vh - 141px);
+    padding-bottom: 0px;
+}
+
+.content_profile {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+.content_profile img{
+    margin: 100px 50px 50px 50px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: slategray;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: translateY(-100%);
+
+}
+
+.footer a:hover {
+    color: #BCAC77;
+}
+
+.footer ul {
+    padding-left: 0;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer li {
+    list-style: none;
+    float: left;
+}
