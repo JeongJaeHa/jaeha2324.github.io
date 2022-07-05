@@ -10,30 +10,6 @@ a {
     color: white;
 }
 
-p1 {
-    display: block;
-    text-align: center;
-    padding-right: 10%;
-    padding-bottom: 15%;
-    margin-top: 15%;
-    margin-bottom: 0;
-    color: white;
-    font-size: 22px;
-}
-
-p2 {
-    display: block;
-    text-align: center;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    margin-top: 15%;
-    margin-bottom: 0;
-    color: white;
-    font-size: 22px;
-}
-
-
-
 i {
     padding-left: 12px;
     text-align: center;
@@ -82,12 +58,12 @@ i {
 
 }
 
-.navbar_menu a::after {
+.navbar_menu a::after  {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     width: 0;
     height: 4px;
     background-color: #fff;
@@ -115,33 +91,32 @@ i {
 .favor {
     background-color: slategrey;
     width: auto;
-    height: calc(100vh - 141px);
+    height: 100%;
 }
 
-.favor_left {
+.favor {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
     height: auto;
-    width: 50%;
+    width: auto;
     min-height: calc(100vh - 141px);
     padding-bottom: 0;
-    float: left;
     margin: 0;
 }
 
-.favor_right {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 50%;
-    min-height: calc(100vh - 141px);
-    padding-bottom: 0;
-    float: right;
-    margin: 0;
+.favor box {
+    width: auto;
+    padding-top: 150px;
 }
+
 
 .favor div {
     text-align: center;
+    height: auto;
+    color: #fff;
+    font-size: 22px;
 }
 
 .favor ul {
@@ -155,23 +130,17 @@ i {
 
 
 
-.favor_img_l {
-    padding: 35px 55px 30px 55px;
-    margin-top: 20px;
-    margin-left: 85px;
+.favor_img {
+    padding: 55px 90px 30px 90px;
     vertical-align: middle;
     flex-direction: column;
-    border-radius: 70%;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
 
 } 
 
-.favor_img_r {
-    padding: 35px;
-    margin-top: 20px;
-    vertical-align: middle;
-    flex-direction: column;
-    border-radius: 70%;
-} 
+
 
 
 footer {
@@ -202,4 +171,10 @@ footer {
 .footer li {
     list-style: none;
     float: left;
+}
+
+@media screen and (max-width:1450px) {
+    .favor {
+        flex-direction: column;
+    }
 }
