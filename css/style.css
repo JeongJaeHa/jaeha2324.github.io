@@ -42,12 +42,12 @@ i {
 
 }
 
-.navbar_menu a::after {
+.navbar_menu a::after  {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     width: 0;
     height: 4px;
     background-color: #fff;
@@ -124,4 +124,9 @@ footer {
 .footer li {
     list-style: none;
     float: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    
 }
